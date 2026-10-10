@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#11101b">
+  <meta name="description" content="SoulQuest turns solo travel into a mysterious real-world treasure hunt. Unlock a secret codename, explore the city, and discover a travel companion.">
+  <title>SoulQuest — Don't Swipe. Hunt. Discover.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <a class="brand" href="#" data-nav="home" aria-label="SoulQuest home">
+        <span class="brand-mark"><span></span><span></span><span></span><span></span></span>
+        <span class="brand-name">soul<span>quest</span><i>.</i></span>
+      </a>
+      <div class="side-label">YOUR ADVENTURE</div>
+      <nav class="side-nav" aria-label="Main navigation">
+        <button class="nav-item active" data-nav="home"><span class="nav-icon">⌂</span> Discover <span class="nav-arrow">↗</span></button>
+        <button class="nav-item" data-nav="quest"><span class="nav-icon">⌁</span> My quest <span class="nav-count" id="navProgress">0/3</span></button>
+        <button class="nav-item" data-nav="codename"><span class="nav-icon">▦</span> Codename</button>
+        <button class="nav-item" data-nav="meetup"><span class="nav-icon">✳</span> Final encounter</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="mini-profile"><div class="avatar avatar-you">G</div><div><strong id="sidebarName">Explorer</strong><small>Quest explorer</small></div><button class="dots" aria-label="Profile options" data-nav="profile">···</button></div>
+        <button class="nav-item quiet" data-nav="safety"><span class="nav-icon">◇</span> Safety & privacy</button>
+      </div>
+    </aside>
+
+    <main class="main-content">
+      <header class="topbar">
+        <div class="mobile-brand"><span class="brand-mark small"><span></span><span></span><span></span><span></span></span><span class="brand-name">soul<span>quest</span><i>.</i></span></div>
+        <div class="breadcrumb"><span>YOUR NEXT STORY</span><span class="crumb-dot">/</span><strong id="crumbTitle">Discover</strong></div>
+        <div class="top-actions"><span class="demo-pill"><span class="pulse-dot"></span> DEMO MODE</span><button class="icon-button" data-nav="safety" aria-label="Safety and privacy">♡</button></div>
+      </header>
+
+      <div class="content-wrap">
+        <section class="view active" id="view-home">
+          <div class="hero">
+            <div class="hero-copy">
+              <div class="eyebrow"><span class="eyebrow-star">✳</span> YOUR CITY IS FULL OF PLOT TWISTS</div>
+              <h1>Don't just visit.<br><span>Find your</span> <em>person.</em></h1>
+              <p class="hero-sub">A little mystery. A tiny bit of chaos. Someone worth getting lost in a city with.</p>
+              <div class="hero-buttons"><button class="btn btn-primary" id="startQuest">Find my travel mate <span>↗</span></button><button class="btn btn-ghost" id="howItWorks">How it works <span>↓</span></button></div>
+              <div class="hero-proof"><div class="stacked-avatars"><span>✦</span><span>☻</span><span>✿</span></div><div><strong>Adventure first. Connection follows.</strong><small>No endless swiping. Just real-world quests.</small></div></div>
+            </div>
+            <div class="hero-art" aria-label="Illustrated treasure map">
+              <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+              <div class="map-paper">
+                <div class="map-grid"></div><svg class="route-svg" viewBox="0 0 320 330" role="img" aria-label="Dotted treasure route"><path d="M52 262 C82 228 67 192 126 184 S192 153 163 116 S228 69 260 53" fill="none" stroke="#fb7b60" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 8"/><path d="M52 262 C82 228 67 192 126 184" fill="none" stroke="#fb7b60" stroke-width="3" stroke-linecap="round"/></svg>
+                <div class="map-label label-one">THE FIRST CLUE <span>01</span></div><div class="map-label label-two">SOMEWHERE NEARBY <span>02</span></div>
+                <div class="map-pin pin-one"><span>✦</span></div><div class="map-pin pin-two"><span>?</span></div><div class="map-pin pin-three"><span>⌖</span></div>
+                <div class="map-stamp">MYSTERY<br><strong>IN MOTION</strong></div>
+                <div class="map-coordinate">10°46' N · 76°39' E</div>
+              </div>
+              <div class="floating-card card-clue"><span class="floating-icon">⌁</span><div><small>CLUE UNLOCKED</small><strong>Someone's out there…</strong></div><span class="tiny-spark">✦</span></div>
+              <div class="floating-card card-letter"><small>SECRET CODENAME</small><div class="letter-row"><b>S</b><b>O</b><b>?</b><b>?</b></div><span class="letter-caption">2 letters discovered</span></div>
+              <div class="art-caption"><span class="caption-dot"></span> A mystery is unfolding</div>
+            </div>
+            <div class="hero-grain"></div>
+          </div>
+
+          <div class="section-heading"><div><div class="eyebrow muted">THE QUEST, IN THREE ACTS</div><h2>Curiosity looks good on you.</h2></div><span class="section-note">A meet-cute, with side quests.</span></div>
+          <div class="feature-grid">
+            <article class="feature-card"><div class="feature-top"><span class="feature-number">01 / EXPLORE</span><span class="feature-symbol symbol-orange">↗</span></div><div class="feature-illustration illustration-map"><span class="illustration-path"></span><span class="illustration-pin">✦</span><span class="illustration-pin second">⌖</span></div><h3>Go where the clues take you.</h3><p>Photo missions turn the city into a playground. Look closer. Wander smarter.</p></article>
+            <article class="feature-card"><div class="feature-top"><span class="feature-number">02 / DECODE</span><span class="feature-symbol symbol-violet">⌘</span></div><div class="feature-illustration illustration-code"><span>S</span><span>O</span><span class="hidden-letter">?</span><span class="hidden-letter">?</span></div><h3>Collect letters. Keep guessing.</h3><p>Every completed mission unlocks a letter of your mystery traveller's codename.</p></article>
+            <article class="feature-card"><div class="feature-top"><span class="feature-number">03 / CONNECT</span><span class="feature-symbol symbol-cyan">✳</span></div><div class="feature-illustration illustration-connect"><span class="connect-orbit"></span><span class="connect-avatar left">☺</span><span class="connect-avatar right">✿</span><span class="connect-spark">✦</span></div><h3>Let the plot come together.</h3><p>Finish the final challenge and get a public meetup invitation. Your call, always.</p></article>
+          </div>
+          <div class="bottom-banner"><div class="banner-star">✳</div><div><strong>Currently plotting in Palakkad.</strong><span>This is a demo adventure with fictional travellers and sample locations.</span></div><button class="text-button" id="bannerStart">Let's play <span>↗</span></button></div>
+        </section>
+
+        <section class="view" id="view-quest">
+          <div class="page-intro"><div><div class="eyebrow muted">MISSION CONTROL / 01</div><h1>Your quest is <em>on.</em></h1><p>Three missions between you and a very interesting plot twist.</p></div><span class="status-chip"><span class="pulse-dot"></span><span id="questStatus">READY TO BEGIN</span></span></div>
+          <div class="quest-layout">
+            <div class="quest-main">
+              <div class="current-mission panel">
+                <div class="panel-head"><span class="eyebrow muted">CURRENT MISSION</span><span class="mission-counter" id="missionCounter">MISSION 01 / 03</span></div>
+                <div class="mission-art"><div class="mission-sun"></div><div class="mission-hill hill-a"></div><div class="mission-hill hill-b"></div><div class="mission-object" id="missionObject">✿</div><div class="mission-sticker">LOOK<br>CLOSER <span>↗</span></div></div>
+                <div class="mission-body"><div class="mission-type"><span class="type-dot"></span><span id="missionType">PHOTO CHALLENGE</span><span class="time-chip" id="timerChip">10:00</span></div><h2 id="missionTitle">Find a little sunshine.</h2><p id="missionDescription">Find something yellow that isn't a vehicle. Photograph your discovery like it belongs in an art gallery.</p>
+                  <div class="mission-location"><span class="location-icon">⌖</span><div><strong id="locationName">Demo location · Town centre</strong><small id="locationHint">Sample location — verify before visiting</small></div><button class="small-link" id="locationInfo">Details ↗</button></div>
+                  <div class="mission-actions"><label class="btn btn-primary upload-button" for="photoInput"><span>＋</span> Upload mission photo<input id="photoInput" type="file" accept="image/*" capture="environment" hidden></label><button class="btn btn-outline" id="completeMission">Simulate success <span>✦</span></button></div>
+                  <div class="upload-preview hidden" id="uploadPreview"><img id="previewImage" alt="Your selected mission photo"><div><strong>Photo ready to submit</strong><small>Demo only — no photo is sent to a server.</small></div><button id="clearPhoto" class="icon-button" aria-label="Remove photo">×</button></div>
+                  <p class="fine-print">Demo mode: mission success is simulated. Real location and photo verification are not connected.</p>
+                </div>
+              </div>
+              <div class="mission-list panel"><div class="panel-head"><div><div class="eyebrow muted">THE ROUTE</div><h3>Three little plot twists</h3></div><span class="list-progress" id="listProgress">0 of 3 done</span></div><div id="missionList"></div></div>
+            </div>
+            <aside class="quest-side">
+              <div class="codename-card panel"><div class="panel-head"><span class="eyebrow muted">YOUR MYSTERY PERSON</span><span class="lock-mark">⌑</span></div><div class="mystery-avatar"><span>?</span><i class="spark spark-a">✦</i><i class="spark spark-b">✧</i></div><div class="codename-name" id="codenamePreview">_ _ _ _ _ _</div><p class="center muted-text">Identity stays hidden.<br>Curiosity does not.</p><div class="letter-progress" id="letterProgress"><span></span><span></span><span></span><span></span><span></span><span></span></div><div class="codename-foot"><span id="lettersCount">0 / 6 letters</span><button class="text-button" data-nav="codename">View code ↗</button></div></div>
+              <div class="timer-card panel"><div class="timer-icon">◷</div><div class="eyebrow muted">QUEST WINDOW</div><div class="big-timer" id="questTimer">30:00</div><p>Every clue has a clock.<br>Every good story has a deadline.</p><div class="timer-track"><span id="timerTrack"></span></div><small id="timerCaption">Your quest hasn't started yet.</small></div>
+              <div class="safety-mini"><span>◇</span><div><strong>Your safety comes first.</strong><p>Public places only. No pressure, no tracking.</p><button class="text-button" data-nav="safety">Safety rules ↗</button></div></div>
+            </aside>
+          </div>
+        </section>
+
+        <section class="view" id="view-codename">
+          <div class="page-intro"><div><div class="eyebrow muted">THE MYSTERY BOARD / 02</div><h1>A name is just <em>letters.</em></h1><p>Earn each letter. Make wild guesses. Be only a little dramatic.</p></div><span class="status-chip"><span class="pulse-dot"></span> CLASSIFIED-ish</span></div>
+          <div class="code-layout">
+            <div class="code-main panel"><div class="code-board-top"><span class="eyebrow muted">SUBJECT SQ-042</span><span class="classification">TOP SECRET ✳</span></div><div class="big-code" id="bigCode"></div><div class="code-scanline"></div><div class="code-message"><span>⌁</span><div><strong id="codeMessageTitle">The mystery remains mysterious.</strong><p id="codeMessage">Complete a mission to uncover the first letter. No pressure, detective.</p></div></div><div class="code-actions"><button class="btn btn-primary" data-nav="quest">Back to missions <span>↗</span></button><button class="btn btn-ghost" id="hintButton">Get a hint <span>✦</span></button></div></div>
+            <div class="code-aside"><div class="panel clue-panel"><div class="eyebrow muted">FIELD NOTES</div><h3>What we know</h3><div class="field-note"><span class="note-icon orange">⌖</span><div><strong>Somewhere nearby</strong><small>Same quest area</small></div></div><div class="field-note"><span class="note-icon violet">♡</span><div><strong>A compatible co-star</strong><small>Connection preferences align</small></div></div><div class="field-note"><span class="note-icon cyan">◷</span><div><strong>Limited time</strong><small>Clues don't wait forever</small></div></div></div><div class="quote-card"><span class="quote-mark">“</span><p id="hintText">Every great mystery starts with someone asking, "Wait… who?"</p><small>— SOULQUEST FIELD MANUAL</small></div></div>
+          </div>
+        </section>
+
+        <section class="view" id="view-meetup">
+          <div class="page-intro"><div><div class="eyebrow muted">THE FINAL CHAPTER / 03</div><h1>Meet-cute, <em>pending.</em></h1><p>Finish the missions to unlock the final challenge and meetup invitation.</p></div><span class="status-chip"><span class="pulse-dot"></span> <span id="meetupStatusTop">LOCKED</span></span></div>
+          <div class="meetup-stage panel" id="meetupStage"><div class="stage-art"><div class="stage-ring ring-one"></div><div class="stage-ring ring-two"></div><div class="stage-center">✳</div><div class="stage-person person-a">?</div><div class="stage-person person-b">✦</div><span class="stage-star star-one">✧</span><span class="stage-star star-two">✦</span></div><div class="stage-copy"><div class="eyebrow muted" id="meetupEyebrow">FINAL CHALLENGE / LOCKED</div><h2 id="meetupTitle">The plot thickens.</h2><p id="meetupDescription">Finish all three missions to unlock the final challenge. The destination is a public place; the decision to meet is always yours.</p><div class="stage-checks"><span id="meetupMissionCheck">○ All missions completed</span><span>◇ Public location only</span><span>♡ Both must accept</span></div><button class="btn btn-primary" id="meetupAction" disabled>Complete the quest first <span>↗</span></button><p class="fine-print" id="meetupFinePrint">This is a demo. No real traveller has been matched and no real meetup is scheduled.</p></div></div>
+          <div class="meetup-bottom-grid"><div class="panel mini-info"><span class="mini-info-icon">⌖</span><div><strong>Public by design</strong><p>Final locations must be verified, accessible public places.</p></div></div><div class="panel mini-info"><span class="mini-info-icon">♡</span><div><strong>Your call, always</strong><p>Both people independently accept. Either can decline or leave.</p></div></div></div>
+        </section>
+
+        <section class="view" id="view-profile">
+          <div class="page-intro"><div><div class="eyebrow muted">YOUR TRAVELLER CARD</div><h1>Set your <em>vibe.</em></h1><p>These demo preferences control the sample experience on this device.</p></div></div>
+          <div class="profile-layout panel"><div class="profile-avatar">G<span>✦</span></div><form id="profileForm" class="profile-form"><label>What should we call you?<input id="nickname" maxlength="24" value="Explorer" required></label><label>Quest city<input id="city" maxlength="60" value="Palakkad" required></label><label>Connection preference<select id="preference"><option value="both">Friendship or romance</option><option value="friendship">Friendship</option><option value="romance">Romance</option></select></label><label>Language<select id="language"><option>English</option><option>Malayalam</option><option>Manglish</option></select></label><button class="btn btn-primary" type="submit">Save preferences <span>↗</span></button><p class="fine-print">Saved only in this browser for the demo. No account or real matching is connected.</p></form></div>
+        </section>
+
+        <section class="view" id="view-safety">
+          <div class="page-intro"><div><div class="eyebrow muted">THE MOST IMPORTANT QUEST</div><h1>Mystery is fun.<br><em>Safety isn't a mystery.</em></h1><p>SoulQuest should make exploration exciting without compromising anyone's privacy or comfort.</p></div></div>
+          <div class="safety-grid"><article class="panel safety-card"><span class="safety-icon">⌖</span><h3>Public places only</h3><p>Choose familiar, accessible places with other people around. Never follow a clue into an isolated area or private property.</p></article><article class="panel safety-card"><span class="safety-icon">◉</span><h3>No live tracking</h3><p>Other travellers' exact live locations stay private. Location access should be optional, transparent and limited to what's needed.</p></article><article class="panel safety-card"><span class="safety-icon">♡</span><h3>Consent at every step</h3><p>A match is not permission to meet. Both people must accept a meetup invitation, and either can change their mind.</p></article><article class="panel safety-card"><span class="safety-icon">⚑</span><h3>Leave or report</h3><p>You can leave any quest. In this demo, report and block controls show the intended flow but don't contact a moderation team.</p></article></div>
+          <div class="bottom-banner safety-banner"><div class="banner-star">◇</div><div><strong>Demo safety notice</strong><span>Fictional users and sample locations only. Do not use this prototype to arrange a real-world meeting.</span></div><button class="text-button" id="leaveQuest">Leave quest <span>↗</span></button></div>
+        </section>
+
+        <footer class="footer"><span>© 2026 SOULQUEST · BUILT FOR THE PLOT</span><span><i class="footer-dot"></i> DEMO EXPERIENCE · NOT LIVE MATCHMAKING</span></footer>
+      </div>
+    </main>
+  </div>
+
+  <nav class="mobile-nav" aria-label="Mobile navigation"><button class="active" data-nav="home"><span>⌂</span>Discover</button><button data-nav="quest"><span>⌁</span>Quest</button><button data-nav="codename"><span>▦</span>Codename</button><button data-nav="meetup"><span>✳</span>Meetup</button></nav>
+  <div class="toast" id="toast" role="status" aria-live="polite"><span class="toast-icon">✦</span><span id="toastText">Quest updated.</span></div>
+  <div class="modal-backdrop hidden" id="modalBackdrop"><div class="modal panel" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="modalClose" aria-label="Close">×</button><div class="modal-symbol" id="modalSymbol">✳</div><div class="eyebrow muted" id="modalEyebrow">SOULQUEST</div><h2 id="modalTitle">Ready for the plot?</h2><p id="modalText">Your adventure begins now.</p><div class="modal-actions" id="modalActions"></div></div></div>
+  <script src="/app.js" defer></script>
+</body>
+</html>
