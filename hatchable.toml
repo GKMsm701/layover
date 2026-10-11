@@ -1,5 +1,0 @@
-# Hatchable project manifest. This file marks the folder as a
-# Hatchable project and declares the services it uses.
-# Reference: https://hatchable.com/docs/developers/config
-name = "SoulQuest"
-description = "A playful, mobile-first travel treasure-hunt app where opted-in nearby travellers complete photo missions to unlock secret codenames and reach a public meetup invitation."

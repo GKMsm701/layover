@@ -73,6 +73,22 @@
           <div class="bottom-banner"><div class="banner-star">✳</div><div><strong>Currently plotting in Palakkad.</strong><span>This is a demo adventure with fictional travellers and sample locations.</span></div><button class="text-button" id="bannerStart">Let's play <span>↗</span></button></div>
         </section>
 
+        <section class="view" id="view-match">
+          <div class="page-intro"><div><div class="eyebrow muted">THE NEARBY SIGNAL / 00</div><h1>Anyone up for a <em>plot twist?</em></h1><p>Find a compatible, opted-in traveller in your quest area. This screen runs on fictional demo data only.</p></div><span class="status-chip"><span class="pulse-dot"></span> <span>DEMO MATCHING</span></span></div>
+          <div class="match-layout">
+            <div class="match-main panel">
+              <div class="match-map" aria-label="Illustrated demo map"><div class="match-map-grid"></div><span class="match-route route-a"></span><span class="match-route route-b"></span><span class="match-pin mp-a">⌖</span><span class="match-pin mp-b">✦</span><span class="match-pin mp-c">?</span><span class="match-map-label">PALAKKAD · SAMPLE AREA</span></div>
+              <div class="match-content"><div class="eyebrow muted">YOUR QUEST, YOUR PACE</div><h2 id="matchTitle">Looking for a co-star?</h2><p id="matchDescription">We'll check fictional demo profiles against your connection preference and quest city. Nothing is sent to real travellers.</p>
+                <div class="match-preferences"><div><span class="preference-icon">♡</span><div><strong>Connection vibe</strong><small id="matchPreference">Friendship or romance</small></div></div><div><span class="preference-icon">⌖</span><div><strong>Quest area</strong><small id="matchCity">Palakkad · sample area</small></div></div><div><span class="preference-icon">◷</span><div><strong>Availability</strong><small>Demo session · right now</small></div></div></div>
+                <div id="matchResult" class="match-result hidden" aria-live="polite"></div>
+                <div class="match-actions"><button class="btn btn-primary" id="runMatch">Find my co-star <span>↗</span></button><button class="btn btn-ghost" id="runNoMatch">Simulate no match</button></div>
+                <p class="fine-print">Real matching, age checks, blocks, reporting, consent and GPS validation are not connected in this prototype.</p>
+              </div>
+            </div>
+            <aside class="match-side"><div class="panel match-note"><span class="match-note-icon">✦</span><h3>No endless swiping.</h3><p>Opt in, match by compatible preferences and overlapping availability, then discover each other through clues—not profile browsing.</p></div><div class="panel match-note"><span class="match-note-icon cyan-note">◇</span><h3>No match? No pressure.</h3><p>Try again later. This app won't start a solo mode or pretend a match exists.</p></div><button class="text-button" data-nav="profile">Edit traveller preferences ↗</button></aside>
+          </div>
+        </section>
+
         <section class="view" id="view-quest">
           <div class="page-intro"><div><div class="eyebrow muted">MISSION CONTROL / 01</div><h1>Your quest is <em>on.</em></h1><p>Three missions between you and a very interesting plot twist.</p></div><span class="status-chip"><span class="pulse-dot"></span><span id="questStatus">READY TO BEGIN</span></span></div>
           <div class="quest-layout">
