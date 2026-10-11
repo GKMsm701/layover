@@ -17,3 +17,5 @@ This folder is a complete Hatchable project. Everything the app needs is in thes
 Hatchable is where AI-built apps go live. Connect the AI you already use and it can build, deploy, and run apps like this one for you.
 
 Built on Hatchable. https://hatchable.com
+
+deployed on:https://soulquest.hatchable.site/
